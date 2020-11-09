@@ -1,4 +1,4 @@
-import {FETCH_ALL,UPDATE,DELETE,CREATE} from './actionTypes'
+import {FETCH_ALL,UPDATE,DELETE,CREATE} from '../actions/actionTypes'
 
 const postsReducer = (posts = [], action) => {
     switch (action.type) {
