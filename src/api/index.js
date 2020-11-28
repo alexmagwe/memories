@@ -1,5 +1,5 @@
 import axios from 'axios'
-const postsUrl='https://memorles.herokuapp.com/posts'
+const postsUrl='https://memorles.herokuapp.com/memories/posts'
 export const fetchPosts = () => axios.get(postsUrl)
 export const createPost = (newPost) => axios.post(postsUrl, newPost)
 export const updatePost=(id,data)=>axios.patch(`${postsUrl}/${id}`,data)
